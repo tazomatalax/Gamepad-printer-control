@@ -1,6 +1,4 @@
 ## Octocontroller
-A script that sends commands from a game controller connected to a PC to Octoprint's REST API over the network
-
 This Python script allows you to control your OctoPrint-enabled 3D printer using a joystick or gamepad. The script uses the **pygame** library to read input from the joystick and sends commands to the OctoPrint server using the **requests** library.
 
 ## Requirements
@@ -33,18 +31,12 @@ python octocontroller.py
 The script will start a loop that reads input from the joystick and sends commands to the OctoPrint server. The X and Y axes of the joystick are mapped to the X and Y axes of the printer, and the buttons are mapped to various commands.
 
 ## Button Mappings
-The script currently supports the following button mappings:
-
-| Button | Command |
-|--------|---------|
-| Button 0 | Move X by 10 to the right |
-| Button 1 | Move X by 10 to the left |
-| Button 2 | Move Y by 10 to the front |
-| Button 3 | Move Y by 10 to the back |
-| Button 4 | Home X and Y axes |
-| Button 5 | Home Z axis |
 
 You can modify the `button_map` dictionary in the script to change the button mappings or add more buttons.
+Check the bottom of this page
+https://www.pygame.org/docs/ref/joystick.html
+for controller button mappings.
+It is currently set up for using the left joystick of an xbox controller, but commented out sections contain the other commands to work with the defined button mappings within `button_map`.
 
 ## Throttling
 The script includes a delay of 0.2 seconds at the end of each loop iteration to throttle the input from the joystick. You can adjust this delay to suit your needs.
