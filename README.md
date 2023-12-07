@@ -1,5 +1,5 @@
 ## Octocontroller
-This Python script allows you to control your OctoPrint-enabled 3D printer using a joystick or gamepad. The script uses the **pygame** library to read input from the joystick and sends commands to the OctoPrint server using the **requests** library.
+This Python script allows you to control your OctoPrint-enabled 3D printer using a joystick or gamepad. The script uses the **pygame** library to read input from the joystick and sends commands to the OctoPrint server using the **requests** library. Here is a link to a youtube [video](https://www.youtube.com/shorts/IK1qhjoYjms)
 
 ## Requirements
 - Python 3
