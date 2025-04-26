@@ -19,6 +19,8 @@ button_map = {
     # Add more buttons as needed
 }
 
+
+
 # URL for printhead control
 url = f"http://{OCTOPRINT_IP}:{OCTOPRINT_PORT}/api/printer/printhead"
 
